@@ -1,4 +1,4 @@
-# Flutter folding cell module
+# Flutter folding cell
 
 A new Flutter app demonstrates folding cell.
 
