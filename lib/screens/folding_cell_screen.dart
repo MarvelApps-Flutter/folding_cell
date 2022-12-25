@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_folding_cell_module/constants/app_constants.dart';
 import '../utils/foldable_card.dart';
 
 class FoldingCellScreen extends StatefulWidget {
@@ -15,7 +16,12 @@ class _FoldingCellScreenState extends State<FoldingCellScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Folding cell listview example"),
+          title: Text(AppConstants.foldingCellTitle,
+              style: TextStyle(
+                  fontFamily: AppConstants.textStyleInter,
+                  fontWeight: FontWeight.w600,
+                  fontSize: 16,
+                  color: Colors.white)),
           centerTitle: true,
         ),
         body: buildBody());
@@ -59,9 +65,9 @@ class _FoldingCellScreenState extends State<FoldingCellScreen> {
                             children: [
                               Padding(
                                 padding: const EdgeInsets.all(8.0),
-                                child: Text("\$14",
+                                child: Text(AppConstants.amounts,
                                     style: TextStyle(
-                                        fontFamily: "Inter",
+                                        fontFamily: AppConstants.textStyleInter,
                                         fontWeight: FontWeight.w600,
                                         fontSize: 16,
                                         color: Colors.white)),
@@ -69,18 +75,18 @@ class _FoldingCellScreenState extends State<FoldingCellScreen> {
                               Spacer(),
                               Padding(
                                 padding: const EdgeInsets.fromLTRB(8, 0, 0, 0),
-                                child: Text("TODAY",
+                                child: Text(AppConstants.today,
                                     style: TextStyle(
-                                        fontFamily: "Inter",
+                                        fontFamily: AppConstants.textStyleInter,
                                         fontWeight: FontWeight.w600,
                                         fontSize: 12,
                                         color: Colors.white)),
                               ),
                               Padding(
                                 padding: const EdgeInsets.all(8.0),
-                                child: Text("05:10 PM",
+                                child: Text(AppConstants.timing,
                                     style: TextStyle(
-                                        fontFamily: "Inter",
+                                        fontFamily: AppConstants.textStyleInter,
                                         fontWeight: FontWeight.w600,
                                         fontSize: 12,
                                         color: Colors.white)),
@@ -102,7 +108,7 @@ class _FoldingCellScreenState extends State<FoldingCellScreen> {
                                   Row(
                                     children: [
                                       Image.asset(
-                                        "assets/images/from_to_purple.png",
+                                        AppConstants.fromPurle,
                                         height: 50,
                                       ),
                                       SizedBox(
@@ -112,9 +118,9 @@ class _FoldingCellScreenState extends State<FoldingCellScreen> {
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
                                         children: [
-                                          Text("W 36th St,NY, 10015",
+                                          Text(AppConstants.upperAdd,
                                               style: TextStyle(
-                                                  fontFamily: "Inter",
+                                                  fontFamily: AppConstants.textStyleInter,
                                                   fontWeight: FontWeight.w600,
                                                   fontSize: 14,
                                                   color: Colors.black)),
@@ -126,9 +132,9 @@ class _FoldingCellScreenState extends State<FoldingCellScreen> {
                                                 0.5,
                                             height: 2,
                                           ),
-                                          Text("W 36th St,NY, 10015",
+                                          Text(AppConstants.lowerAdd,
                                               style: TextStyle(
-                                                  fontFamily: "Inter",
+                                                  fontFamily: AppConstants.textStyleInter,
                                                   fontWeight: FontWeight.w600,
                                                   fontSize: 14,
                                                   color: Colors.black)),
@@ -147,15 +153,15 @@ class _FoldingCellScreenState extends State<FoldingCellScreen> {
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
                                         children: [
-                                          Text("REQUESTS",
+                                          Text(AppConstants.request,
                                               style: TextStyle(
-                                                  fontFamily: "Inter",
+                                                  fontFamily: AppConstants.textStyleInter,
                                                   fontWeight: FontWeight.w500,
                                                   fontSize: 13,
                                                   color: Colors.grey)),
-                                          Text("0",
+                                          Text(AppConstants.zeroAmt,
                                               style: TextStyle(
-                                                  fontFamily: "Inter",
+                                                  fontFamily: AppConstants.textStyleInter,
                                                   fontWeight: FontWeight.w500,
                                                   fontSize: 13,
                                                   color: Colors.grey))
@@ -165,15 +171,15 @@ class _FoldingCellScreenState extends State<FoldingCellScreen> {
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
                                         children: [
-                                          Text("PLEDGE",
+                                          Text(AppConstants.pledge,
                                               style: TextStyle(
-                                                  fontFamily: "Inter",
+                                                  fontFamily: AppConstants.textStyleInter,
                                                   fontWeight: FontWeight.w500,
                                                   fontSize: 13,
                                                   color: Colors.grey)),
-                                          Text("\$350",
+                                          Text(AppConstants.amt350,
                                               style: TextStyle(
-                                                  fontFamily: "Inter",
+                                                  fontFamily: AppConstants.textStyleInter,
                                                   fontWeight: FontWeight.w500,
                                                   fontSize: 13,
                                                   color: Colors.grey))
@@ -183,15 +189,15 @@ class _FoldingCellScreenState extends State<FoldingCellScreen> {
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
                                         children: [
-                                          Text("WEIGHT",
+                                          Text(AppConstants.weight,
                                               style: TextStyle(
-                                                  fontFamily: "Inter",
+                                                  fontFamily: AppConstants.textStyleInter,
                                                   fontWeight: FontWeight.w500,
                                                   fontSize: 13,
                                                   color: Colors.grey)),
                                           Text("50 oz",
                                               style: TextStyle(
-                                                  fontFamily: "Inter",
+                                                  fontFamily: AppConstants.textStyleInter,
                                                   fontWeight: FontWeight.w500,
                                                   fontSize: 13,
                                                   color: Colors.grey))
@@ -227,17 +233,17 @@ class _FoldingCellScreenState extends State<FoldingCellScreen> {
                             color: Colors.white,
                           ),
                         ),
-                        Text("# 1234-5678",
+                        Text(AppConstants.numbering,
                             style: TextStyle(
-                                fontFamily: "Inter",
+                                fontFamily: AppConstants.textStyleInter,
                                 fontWeight: FontWeight.w600,
                                 fontSize: 16,
                                 color: Colors.white)),
                         Padding(
                           padding: const EdgeInsets.only(right: 8.0),
-                          child: Text("\$25",
+                          child: Text(AppConstants.amt25,
                               style: TextStyle(
-                                  fontFamily: "Inter",
+                                  fontFamily: AppConstants.textStyleInter,
                                   fontWeight: FontWeight.w600,
                                   fontSize: 16,
                                   color: Colors.white)),
@@ -248,7 +254,7 @@ class _FoldingCellScreenState extends State<FoldingCellScreen> {
                   Stack(
                     children: [
                       Image.asset(
-                        "assets/images/head_image.png",
+                        AppConstants.headImage,
                       ),
                       Positioned(
                           bottom: 0,
@@ -259,57 +265,67 @@ class _FoldingCellScreenState extends State<FoldingCellScreen> {
                             child: FractionallySizedBox(
                               widthFactor: 0.9,
                               child: Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
                                   Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: [
-                                      Text("REQUESTS",
+                                      Text(AppConstants.requests,
                                           style: TextStyle(
-                                              fontFamily: "Inter",
+                                              fontFamily: AppConstants.textStyleInter,
                                               fontWeight: FontWeight.w500,
                                               fontSize: 13,
                                               color: Colors.grey)),
-                                      SizedBox(height: 5,),
-                                      Text("0",
+                                      SizedBox(
+                                        height: 5,
+                                      ),
+                                      Text(AppConstants.zeroAmt,
                                           style: TextStyle(
-                                              fontFamily: "Inter",
+                                              fontFamily: AppConstants.textStyleInter,
                                               fontWeight: FontWeight.w500,
                                               fontSize: 13,
                                               color: Colors.grey))
                                     ],
                                   ),
                                   Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: [
-                                      Text("PLEDGE",
+                                      Text(AppConstants.pledge,
                                           style: TextStyle(
-                                              fontFamily: "Inter",
+                                              fontFamily: AppConstants.textStyleInter,
                                               fontWeight: FontWeight.w500,
                                               fontSize: 13,
                                               color: Colors.grey)),
-                                      SizedBox(height: 5,),
-                                      Text("\$350",
+                                      SizedBox(
+                                        height: 5,
+                                      ),
+                                      Text(AppConstants.amt350,
                                           style: TextStyle(
-                                              fontFamily: "Inter",
+                                              fontFamily: AppConstants.textStyleInter,
                                               fontWeight: FontWeight.w500,
                                               fontSize: 13,
                                               color: Colors.grey))
                                     ],
                                   ),
                                   Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: [
-                                      Text("WEIGHT",
+                                      Text(AppConstants.weight,
                                           style: TextStyle(
-                                              fontFamily: "Inter",
+                                              fontFamily: AppConstants.textStyleInter,
                                               fontWeight: FontWeight.w500,
                                               fontSize: 13,
                                               color: Colors.grey)),
-                                      SizedBox(height: 5,),
-                                      Text("50 oz",
+                                      SizedBox(
+                                        height: 5,
+                                      ),
+                                      Text(AppConstants.oz50,
                                           style: TextStyle(
-                                              fontFamily: "Inter",
+                                              fontFamily: AppConstants.textStyleInter,
                                               fontWeight: FontWeight.w500,
                                               fontSize: 13,
                                               color: Colors.grey))
@@ -335,16 +351,16 @@ class _FoldingCellScreenState extends State<FoldingCellScreen> {
                               children: [
                                 Column(
                                   children: [
-                                    Text("SENDER",
+                                    Text(AppConstants.sender,
                                         style: TextStyle(
-                                            fontFamily: "Inter",
+                                            fontFamily: AppConstants.textStyleInter,
                                             fontWeight: FontWeight.w500,
                                             fontSize: 12,
                                             color: Colors.grey)),
                                     SizedBox(
                                       height: 65,
                                       child: Image.asset(
-                                        "assets/images/avatar.png",
+                                        AppConstants.avatar,
                                         //height: 65,
                                         fit: BoxFit.fill,
                                       ),
@@ -361,9 +377,9 @@ class _FoldingCellScreenState extends State<FoldingCellScreen> {
                                     SizedBox(
                                       height: 15,
                                     ),
-                                    Text("Edward Norton",
+                                    Text(AppConstants.edwardNorton,
                                         style: TextStyle(
-                                            fontFamily: "Inter",
+                                            fontFamily: AppConstants.textStyleInter,
                                             fontWeight: FontWeight.w600,
                                             fontSize: 16,
                                             color: Colors.black)),
@@ -372,10 +388,10 @@ class _FoldingCellScreenState extends State<FoldingCellScreen> {
                                         child: Row(
                                           children: [
                                             Image.asset(
-                                                "assets/images/stars.png"),
-                                            Text("(26)",
+                                                AppConstants.stars),
+                                            Text(AppConstants.th26,
                                                 style: TextStyle(
-                                                    fontFamily: "Inter",
+                                                    fontFamily: AppConstants.textStyleInter,
                                                     fontWeight: FontWeight.w600,
                                                     fontSize: 16,
                                                     color: Colors.black))
@@ -425,21 +441,21 @@ class _FoldingCellScreenState extends State<FoldingCellScreen> {
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("FROM",
+                                  Text(AppConstants.from,
                                       style: TextStyle(
-                                          fontFamily: "Inter",
+                                          fontFamily: AppConstants.textStyleInter,
                                           fontWeight: FontWeight.w500,
                                           fontSize: 13,
                                           color: Colors.grey)),
-                                  Text("W 90th St",
+                                  Text(AppConstants.th90,
                                       style: TextStyle(
-                                          fontFamily: "Inter",
+                                          fontFamily: AppConstants.textStyleInter,
                                           fontWeight: FontWeight.w700,
                                           fontSize: 16,
                                           color: Colors.black)),
-                                  Text("New York, NY 10025",
+                                  Text(AppConstants.newYork,
                                       style: TextStyle(
-                                          fontFamily: "Inter",
+                                          fontFamily: AppConstants.textStyleInter,
                                           fontWeight: FontWeight.w500,
                                           fontSize: 12,
                                           color: Colors.black))
@@ -448,21 +464,21 @@ class _FoldingCellScreenState extends State<FoldingCellScreen> {
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("TO",
+                                  Text(AppConstants.to,
                                       style: TextStyle(
-                                          fontFamily: "Inter",
+                                          fontFamily: AppConstants.textStyleInter,
                                           fontWeight: FontWeight.w500,
                                           fontSize: 13,
                                           color: Colors.grey)),
-                                  Text("46th Ave",
+                                  Text(AppConstants.th46,
                                       style: TextStyle(
-                                          fontFamily: "Inter",
+                                          fontFamily: AppConstants.textStyleInter,
                                           fontWeight: FontWeight.w700,
                                           fontSize: 16,
                                           color: Colors.black)),
-                                  Text("Woodside, NY 11101",
+                                  Text(AppConstants.woodSide,
                                       style: TextStyle(
-                                          fontFamily: "Inter",
+                                          fontFamily: AppConstants.textStyleInter,
                                           fontWeight: FontWeight.w500,
                                           fontSize: 12,
                                           color: Colors.black))
@@ -516,21 +532,21 @@ class _FoldingCellScreenState extends State<FoldingCellScreen> {
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text("DELIVERY DATE",
+                                    Text(AppConstants.deliveryDate,
                                         style: TextStyle(
-                                            fontFamily: "Inter",
+                                            fontFamily: AppConstants.textStyleInter,
                                             fontWeight: FontWeight.w500,
                                             fontSize: 13,
                                             color: Colors.grey)),
-                                    Text("6:30 pm",
+                                    Text(AppConstants.pm6,
                                         style: TextStyle(
-                                            fontFamily: "Inter",
+                                            fontFamily: AppConstants.textStyleInter,
                                             fontWeight: FontWeight.w700,
                                             fontSize: 16,
                                             color: Colors.black)),
-                                    Text("May 16,2016",
+                                    Text(AppConstants.may16,
                                         style: TextStyle(
-                                            fontFamily: "Inter",
+                                            fontFamily: AppConstants.textStyleInter,
                                             fontWeight: FontWeight.w500,
                                             fontSize: 12,
                                             color: Colors.black))
@@ -539,15 +555,15 @@ class _FoldingCellScreenState extends State<FoldingCellScreen> {
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text("REQUEST DEADLINE",
+                                    Text(AppConstants.reqDead,
                                         style: TextStyle(
-                                            fontFamily: "Inter",
+                                            fontFamily: AppConstants.textStyleInter,
                                             fontWeight: FontWeight.w500,
                                             fontSize: 13,
                                             color: Colors.grey)),
-                                    Text("24 minutes",
+                                    Text(AppConstants.min24,
                                         style: TextStyle(
-                                            fontFamily: "Inter",
+                                            fontFamily: AppConstants.textStyleInter,
                                             fontWeight: FontWeight.w700,
                                             fontSize: 16,
                                             color: Colors.black))
@@ -583,7 +599,13 @@ class _FoldingCellScreenState extends State<FoldingCellScreen> {
                                 onPressed: () {
                                   print("button pressed");
                                 },
-                                child: Text("REQUEST")),
+                                child: Text(AppConstants.req,
+                                 style: TextStyle(
+                                            fontFamily: AppConstants.textStyleInter,
+                                            fontWeight: FontWeight.w500,
+                                            fontSize: 12,
+                                            color: Colors.black)
+                                )),
                           ),
                         ),
                       ],

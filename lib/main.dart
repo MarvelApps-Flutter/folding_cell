@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/folding_cell_screen.dart';
+import 'package:flutter_folding_cell_module/screens/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,12 +16,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSwatch().copyWith(
           primary: Colors.deepPurple.shade900.withOpacity(0.8),
-          //secondary: Colors.deepPurple.shade900.withOpacity(0.8),
         ),
-        // primaryColor: Colors.deepPurple.shade900.withOpacity(0.8)
       ),
-      home: 
-      FoldingCellScreen(),
+      home: SplashScreen()
     );
   }
 }
