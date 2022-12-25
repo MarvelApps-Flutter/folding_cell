@@ -1,16 +1,33 @@
-# flutter_folding_cell_module
+# Flutter folding cell module
 
-A new Flutter application.
+A new Flutter app demonstrates folding cell.
 
-## Getting Started
+# Video Preview
+<img src="https://github.com/MarvelApps-Flutter/folding_cell/blob/master/media/gif/demo.gif" height="480px"></td>
 
-This project is a starting point for a Flutter application.
+# Android Screenshots
 
-A few resources to get you started if this is your first Flutter project:
+<table>
+  <tr>
+    <td align="center" valign="center">Home Screen before Drag</td>
+     <td align="center" valign="center">Home Screen after Drag</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/MarvelApps-Flutter/folding_cell/blob/master/media/android/android1.png" height="480px"></td>
+    <td><img src="https://github.com/MarvelApps-Flutter/folding_cell/blob/master/media/android/android2.png" height="480px"></td>
+  </tr>
+ </table>
+</br>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+# IOS Screenshots
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<table>
+  <tr>
+     <td align="center" valign="center">Home Screen before Drag</td>
+     <td align="center" valign="center">Home Screen after Drag</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/MarvelApps-Flutter/folding_cell/blob/master/media/ios/ios1.png" height="480px"></td>
+    <td><img src="https://github.com/MarvelApps-Flutter/folding_cell/blob/master/media/ios/ios2.png" height="480px"></td>
+  </tr>
+ </table>
