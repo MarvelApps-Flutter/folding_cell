@@ -16,6 +16,7 @@ class _FoldingCellScreenState extends State<FoldingCellScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          automaticallyImplyLeading: false,
           title: Text(AppConstants.foldingCellTitle,
               style: TextStyle(
                   fontFamily: AppConstants.textStyleInter,
