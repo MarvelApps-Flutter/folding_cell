@@ -15,7 +15,7 @@ A new Flutter app demonstrates folding cell.
  </table>
 </br>
 
-# IOS Screenshots
+# iOS Screenshots
 
 <table>
   <tr>
